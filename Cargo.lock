@@ -42,7 +42,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "lll"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "cursive 0.7.5 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
