@@ -2,6 +2,6 @@
 name = "lll"
 version = "0.0.1"
 authors = ["Zac Anger <zac@zacanger.com>"]
-edition = "2019"
+edition = "2018"
 
 [dependencies]
