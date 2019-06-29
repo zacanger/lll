@@ -5,5 +5,13 @@ authors = ["Zac Anger <zac@zacanger.com>"]
 edition = "2018"
 description = "Simple terminal file manager"
 license = "MIT"
+readme = "README.md"
+keywords = ["cli", "terminal", "file-manager", "file"]
+repository = "https://github.com/zacanger/lll"
+homepage = "https://github.com/zacanger/lll"
 
 [dependencies]
+
+[[bin]]
+name = "lll"
+path = "src/main.rs"
