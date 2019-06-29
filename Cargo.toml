@@ -1,6 +1,6 @@
 [package]
 name = "lll"
-version = "0.0.2"
+version = "0.0.3"
 authors = ["Zac Anger <zac@zacanger.com>"]
 edition = "2018"
 description = "Simple terminal file manager"
@@ -12,6 +12,7 @@ homepage = "https://github.com/zacanger/lll"
 
 [dependencies]
 cursive = "0.7.4"
+open = "1.2.2"
 
 [[bin]]
 name = "lll"
