@@ -6,13 +6,27 @@ WIP, extremely rough. So far, you can open a file from a list of files.
 
 ## Goals
 
-Almost no features. Think more like `noice` than `ranger`, which is why I'm
-writing my own rather than using Hunter.
+Almost no features. Think more like `noice` than `ranger`.
 
-* No preview, themes, built-in shell execution, config files, etc.
-* Minimal keybinds (`hjkl`, `dd`/`yy`/`pp`, `xx` to delete, `/` to search)
-* Handle files in their default apps (xdg-open)
-* Drop to a shell for most operations and back into `lll` when you're done
+* None of these are planned features:
+  * Themes
+  * Built-in shell execution
+  * Config files
+  * Multiple panes (use screen or tmux)
+  * System information
+  * Windows support
+
+* But these are:
+  * Handle files in their default apps (xdg-open)
+  * Planned keybinds (not implemented yet):
+    * `hjkl` navigation
+    * `d` cut a file/directory
+    * `y` yank (copy) a file/directory
+    * `p` put
+    * `x` delete
+    * `/` search (smartcase) (should filter results, not navigate between matches)
+    * `space` select multiple items
+    * `s` drop to a shell (on `exit`, should return to `lll`)
 
 ## Other options
 
