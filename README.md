@@ -27,6 +27,7 @@ Almost no features. Think more like `noice` than `ranger`.
     * `/` search (smartcase) (should filter results, not navigate between matches)
     * `space` select multiple items
     * `s` drop to a shell (on `exit`, should return to `lll`)
+    * `q` exit
 
 ## Other options
 

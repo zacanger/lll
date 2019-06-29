@@ -135,3 +135,4 @@ Procfile text
 
 package-lock.json -diff
 flow-typed/**/* -diff
+Cargo.lock -diff
