@@ -4,4 +4,4 @@
 
 # Actual behavior:
 
-# Environment info (relevant browser, OS, etc.; run `npx envinfo`):
+# Environment info (OS, terminal, etc.):
