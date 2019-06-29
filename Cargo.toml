@@ -3,5 +3,7 @@ name = "lll"
 version = "0.0.1"
 authors = ["Zac Anger <zac@zacanger.com>"]
 edition = "2018"
+description = "Simple terminal file manager"
+license = "MIT"
 
 [dependencies]
