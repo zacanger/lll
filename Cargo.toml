@@ -11,7 +11,7 @@ repository = "https://github.com/zacanger/lll"
 homepage = "https://github.com/zacanger/lll"
 
 [dependencies]
-cursive = "0.7.4"
+cursive = "0.12.0"
 open = "1.2.2"
 
 [[bin]]

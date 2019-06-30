@@ -8,6 +8,12 @@ WIP, extremely rough. So far, you can open a file from a list of files.
 
 Almost no features. Think more like `noice` than `ranger`.
 
+Keybinds:
+
+* up/down arrows: up/down selection
+* enter: open file
+* `q`: exit
+
 * None of these are planned features:
   * Themes
   * Built-in shell execution
@@ -27,7 +33,6 @@ Almost no features. Think more like `noice` than `ranger`.
     * `/` search (smartcase) (should filter results, not navigate between matches)
     * `space` select multiple items
     * `s` drop to a shell (on `exit`, should return to `lll`)
-    * `q` exit
 
 ## Other options
 
