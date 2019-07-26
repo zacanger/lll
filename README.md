@@ -2,17 +2,17 @@
 
 Simple terminal file manager
 
-WIP, extremely rough. So far, you can open a file from a list of files.
+WIP, extremely rough. I would not recommend using this until it's 1.0.0.
 
 ## Goals
 
 Almost no features. Think more like `noice` than `ranger`.
 
-Keybinds:
-
-* up/down arrows: up/down selection
-* enter: open file
-* `q`: exit
+* Current keybinds:
+  * `hjkl`: navigation
+  * `q` quit
+  * `G` jump to bottom
+  * `g` jump to top
 
 * None of these are planned features:
   * Themes
@@ -24,13 +24,14 @@ Keybinds:
 
 * But these are:
   * Handle files in their default apps (xdg-open)
-  * Planned keybinds (not implemented yet):
-    * `hjkl` navigation
+  * Planned keybinds (mostly not implemented yet):
+    * `l` should open a file, if not a directory (XDG_OPEN, spawn new terminal?)
     * `d` cut a file/directory
     * `y` yank (copy) a file/directory
     * `p` put
     * `x` delete
     * `/` search (smartcase) (should filter results, not navigate between matches)
+    * `.` toggle hidden files visibility (true by default)
     * `space` select multiple items
     * `s` drop to a shell (on `exit`, should return to `lll`)
 
@@ -47,5 +48,6 @@ Keybinds:
   fast and maintainable.
 * `lf` (Go) is very good. Like `ranger` minus a bunch of stuff I never use. I
   should really get better at Go.
+* `marcos` (Rust) is rough, but I'm using some code from it (MIT, Hitesh Paul).
 
 [LICENSE (MIT)](./LICENSE.md)
