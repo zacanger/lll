@@ -24,6 +24,7 @@ Almost no features. Think more like `noice` than `ranger`.
 
 * But these are:
   * Handle files in their default apps (xdg-open)
+  * Make scrolling work (currently doesn't re-draw when you go below or above the current screen)
   * Planned keybinds (mostly not implemented yet):
     * `l` should open a file, if not a directory (XDG_OPEN, spawn new terminal?)
     * `d` cut a file/directory
