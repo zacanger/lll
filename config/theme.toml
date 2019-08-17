@@ -1,0 +1,73 @@
+# 0 -> black
+# 1 -> red
+# 2 -> green
+# 3 -> yellow
+# 4 -> blue
+# 5 -> magenta
+# 6 -> cyan
+# 7 -> white
+# -1 -> default (transparent)
+
+[[colorpair]]
+id = 1
+fg = 1
+bg = -1
+
+[[colorpair]]
+id = 2
+fg = 2
+bg = -1
+
+[[colorpair]]
+id = 3
+fg = 3
+bg = -1
+
+[[colorpair]]
+id = 4
+fg = 4
+bg = -1
+
+[[colorpair]]
+id = 5
+fg = 5
+bg = -1
+
+[[colorpair]]
+id = 6
+fg = 6
+bg = -1
+
+
+[selection]
+colorpair = 3
+bold = true
+underline = false
+[selection.prefix]
+prefix = "  "
+size = 2
+
+[executable]
+colorpair = 2
+bold = true
+underline = false
+
+[regular]
+colorpair = 0
+bold = false
+underline = false
+
+[directory]
+colorpair = 4
+bold = true
+underline = false
+
+[link]
+colorpair = 6
+bold = true
+underline = false
+
+[socket]
+colorpair = 6
+bold = true
+underline = false
