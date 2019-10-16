@@ -51,4 +51,4 @@ Almost no features. Think more like `noice` than `ranger`.
   should really get better at Go.
 * `marcos` (Rust) is rough, but I'm using some code from it (MIT, Hitesh Paul).
 
-[LICENSE (MIT)](./LICENSE.md)
+[LICENSE](./LICENSE.md)
