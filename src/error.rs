@@ -1,24 +1,48 @@
-pub enum LllError {
-    IO(std::io::Error),
-    Keymap(KeymapError),
+use std::{fmt, result};
+
+use failure;
+use failure::{Backtrace, Context, Fail};
+
+pub type Result<T> = result::Result<T, Error>;
+
+#[derive(Debug)]
+pub struct Error {
+    inner: Context<ErrorKind>,
 }
 
-pub struct KeymapError {
-    pub command: Option<&'static str>,
-    pub error: String,
-}
+impl Fail for Error {
+    fn cause(&self) -> Option<&dyn Fail> {
+        self.inner.cause()
+    }
 
-impl KeymapError {
-    pub fn new(command: Option<&'static str>, error: String) -> Self {
-        KeymapError { command, error }
+    fn backtrace(&self) -> Option<&Backtrace> {
+        self.inner.backtrace()
     }
 }
 
-impl std::fmt::Display for KeymapError {
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        match self.command {
-            Some(s) => write!(f, "{}: {}", s, self.error),
-            None => write!(f, "{}", self.error),
+impl fmt::Display for Error {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        fmt::Display::fmt(&self.inner, f)
+    }
+}
+
+/// Kinds of error which need to be handled
+#[derive(Debug, Fail)]
+pub enum ErrorKind {
+    #[fail(display = "Directory not found: {}", dirname)]
+    DirNotFound { dirname: String },
+}
+
+impl From<ErrorKind> for Error {
+    fn from(kind: ErrorKind) -> Error {
+        Error {
+            inner: Context::new(kind),
         }
+    }
+}
+
+impl From<Context<ErrorKind>> for Error {
+    fn from(kind: Context<ErrorKind>) -> Error {
+        Error { inner: kind }
     }
 }

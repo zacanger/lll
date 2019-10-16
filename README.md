@@ -4,10 +4,6 @@ Simple terminal file manager
 
 WIP, extremely rough. I would not recommend using this until it's 1.0.0.
 
-## Dependencies
-
-* ncurses
-
 ## Goals
 
 Almost no features. Think more like `noice` than `ranger`.
@@ -15,14 +11,8 @@ Almost no features. Think more like `noice` than `ranger`.
 * Current keybinds:
   * `hjkl`: navigation
   * `q` quit
-  * `r` rename
   * `G` jump to bottom
   * `g` jump to top
-  * `/` search (case insensitve)
-    * `n`/`N` back/foward through search results
-  * `.` toggle hidden files visibility (true by default)
-  * `space` select multiple items
-  * `r` rename
 
 * None of these are planned features:
   * Themes
@@ -41,6 +31,9 @@ Almost no features. Think more like `noice` than `ranger`.
     * `y` yank (copy) a file/directory
     * `p` put
     * `x` delete
+    * `/` search (smartcase) (should filter results, not navigate between matches)
+    * `.` toggle hidden files visibility (true by default)
+    * `space` select multiple items
     * `s` drop to a shell (on `exit`, should return to `lll`)
 
 ## Other options
@@ -56,8 +49,6 @@ Almost no features. Think more like `noice` than `ranger`.
   fast and maintainable.
 * `lf` (Go) is very good. Like `ranger` minus a bunch of stuff I never use. I
   should really get better at Go.
-* `marcos` (Rust) is rough.
+* `marcos` (Rust) is rough, but I'm using some code from it (MIT, Hitesh Paul).
 
-* Using some code from [Joshuto](https://github.com/kamiyaa/joshuto).
-
-[LICENSE](./LICENSE.md)
+[LICENSE (MIT)](./LICENSE.md)
