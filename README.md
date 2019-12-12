@@ -4,6 +4,8 @@ Simple terminal file manager
 
 WIP, extremely rough. I would not recommend using this until it's 1.0.0.
 
+[![Support with PayPal](https://img.shields.io/badge/paypal-donate-yellow.png)](https://paypal.me/zacanger) [![Patreon](https://img.shields.io/badge/patreon-donate-yellow.svg)](https://www.patreon.com/zacanger) [![ko-fi](https://img.shields.io/badge/donate-KoFi-yellow.svg)](https://ko-fi.com/U7U2110VB)
+
 ## Dependencies
 
 * ncurses
@@ -49,7 +51,7 @@ Almost no features. Think more like `noice` than `ranger`.
   and is not always fast.
 * `hunter` and `joshuto` are `ranger` clones in Rust. `joshuto` is pretty good!
   I haven't tried `hunter` because it requires more packages than I want to
-  install.
+  install. This uses some code from Joshuto.
 * `nnn`, `noice`, and `rover` are relatively small and written in C. I like
   them! But I don't like C.
 * `fff` is also fun, but it's written in Bash, and I wanted something both
@@ -57,7 +59,5 @@ Almost no features. Think more like `noice` than `ranger`.
 * `lf` (Go) is very good. Like `ranger` minus a bunch of stuff I never use. I
   should really get better at Go.
 * `marcos` (Rust) is rough.
-
-* Using some code from [Joshuto](https://github.com/kamiyaa/joshuto).
 
 [LICENSE](./LICENSE.md)
